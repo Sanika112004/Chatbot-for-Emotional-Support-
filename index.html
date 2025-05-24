@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 Emotional Support Chatbot 💖</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  </head>
+  <body>
+    <div class="chat-container">
+      <h2>💖 Emotional Support Chatbot 💖</h2>
+      <div class="chat-box" id="chatBox"></div>
+      <div class="input-container">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="How are you feeling today?🤗"
+        />
+        <button onclick="sendMessage()"><b>Send</b>💌</button>
+
+        <div class="emoji-container">
+          <button id="emojiButton" onclick="toggleEmojiPicker()">😊</button>
+          <div id="emojiPicker" class="emoji-picker">
+            <span class="emoji" onclick="insertEmoji('🥹')">🥹</span>
+            <span class="emoji" onclick="insertEmoji('😔')">😔</span>
+            <span class="emoji" onclick="insertEmoji('😭')">😭</span>
+            <span class="emoji" onclick="insertEmoji('❤️')">❤️</span>
+            <span class="emoji" onclick="insertEmoji('😂')">😂</span>
+            <span class="emoji" onclick="insertEmoji('😢')">😢</span>
+            <span class="emoji" onclick="insertEmoji('😇')">😇</span>
+            <span class="emoji" onclick="insertEmoji('😎')">😎</span>
+            <span class="emoji" onclick="insertEmoji('😍')">😍</span>
+            <span class="emoji" onclick="insertEmoji('🥺')">🥺</span>
+            <span class="emoji" onclick="insertEmoji('👍')">👍</span>
+            <span class="emoji" onclick="insertEmoji('👋')">👋</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  margin: 0;
+}
+
+.chat-container {
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  color: #f6f5f5;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 0;
+  background: #ff4081;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.chat-box {
+  height: 450px;
+  overflow-y: auto;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #faf4f4, #f5bbce);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin: 5px 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.message {
+  font-family: "Arial", sans-serif;
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.bot-wrapper {
+  flex-direction: row;
+}
+
+.user-wrapper {
+  flex-direction: row-reverse;
+}
+
+.bot {
+  background: #ffadca;
+  color: #000;
+  margin-left: 10px;
+}
+
+.user {
+  background: #ff4081;
+  color: white;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 4px;
+  background: linear-gradient(135deg, #f14196 0%, #161515 100%);
+  box-shadow: 0 0 8px rgba(216, 121, 169, 0.817);
+  transition: transform 0.3s ease;
+}
+
+.message-wrapper:hover .avatar {
+  transform: scale(1.1);
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+  padding: 5px;
+  background: #ff758c;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  background: #ff4081;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e91e63;
+}
+
+.emoji-container {
+  position: relative;
+}
+
+.emoji-picker {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.emoji {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
