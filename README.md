@@ -39,7 +39,7 @@ emotional-support-chatbot/
 ├── index.html # Main chatbot UI
 ├── style.css # Stylesheet (pink theme, animations)
 ├── script.js # JavaScript logic for chatbot & PDF parsing
-├── emo.pdf # Emotional Support Guide with 100+ topics
+├── "Emo_Supp_Guide.pdf # Emotional Support Guide with 100+ topics
 ├── assets/
 │ └── robot.png #Robot profile icon
 │  ── user.png # User profile icon
