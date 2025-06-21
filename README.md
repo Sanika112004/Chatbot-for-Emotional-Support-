@@ -18,6 +18,12 @@ An interactive, emotional support chatbot web application built using **HTML**, 
 - **JavaScript** - Core chatbot logic, PDF text extraction, keyword matching
 - **[PDF.js](https://mozilla.github.io/pdf.js/)** - Used to load and read content from the emotional support PDF
 
+## 📸 Preview
+
+Chatbot Screenshot: (./Screenshot(703).png)
+
+This chatbot provides emotional support using responses from a PDF file.
+
 ## 📄 How It Works
 
 1. The chatbot loads a structured emotional support PDF (`Emo_Supp_Guide.pdf`) using PDF.js.
